@@ -1,0 +1,19 @@
+# 归档站点：默认按字节保存，避免 Windows CRLF 自动转换污染原始资料
+* -text
+
+# 纯文本统一 LF，便于 GitHub 网页 diff
+*.html text eol=lf
+*.css  text eol=lf
+*.js   text eol=lf
+*.json text eol=lf
+*.md   text eol=lf
+*.py   text eol=lf
+*.xml  text eol=lf
+*.txt  text eol=lf
+*.bat  text eol=crlf
+
+# 二进制保真
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.pdf  binary
