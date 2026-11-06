@@ -1,5 +1,7 @@
 # K-12 学霸笔记站点
 
+**GitHub 仓库：** https://github.com/awakeninglanxin/k12-xueba-notes
+
 **在线浏览：** https://awakeninglanxin.github.io/k12-xueba-notes/
 
 按 14 个年级（幼儿 0-3 岁 → 小班 / 中班 / 大班 → 小学一至六年级 → 初一 / 初二 / 初三 → 高中）组织的静态学习资料站点。全部内容取自真实公开数据源与 ima 知识库检索结果，**未编造知识点或题目**。
@@ -18,7 +20,7 @@
 | 本地双击 | 直接打开根目录 `index.html`（页内链接均为相对路径） |
 | 本地服务 | `python -m http.server 8000` 后访问 `http://localhost:8000` |
 
-> 根目录 `.nojekyll` 用于关闭 GitHub Pages 的 Jekyll 处理，保证中文路径和 `_生成工具/` 目录可正常访问。
+> 根目录 `.nojekyll` 用于关闭 Jekyll 处理，保证 `_生成工具/` 等下划线目录与中文路径在静态服务下可正常访问。线上由 `.github/workflows/pages.yml` 通过 GitHub Actions 部署，每次推送到 `main` 自动更新站点。
 
 ## 二、站点结构
 
@@ -88,5 +90,5 @@ python _生成工具/build_site.py
 ## 七、已知限制
 
 1. ima MCP 的 `FetchMediaContent` 对订阅知识库一律返回 `220030 该文件获取失败`，因此 PDF 原件与全文无法导出，本仓库只保留目录索引。
-2. 部分预览环境不提供 `.md` / `.pdf` 的在线渲染，因此每份笔记额外生成了 HTML 网页版；Markdown 与 PDF 保留在 `资料库/` 供本地使用。
+2. 部分本地预览面板不提供 `.md` / `.pdf` 的在线渲染，因此每份笔记额外生成了 HTML 网页版；Markdown 与 PDF 保留在 `资料库/` 供本地使用（GitHub Pages 上这两类文件均可直接访问）。
 3. 知识点覆盖以数学为主，兼有语文、英语、物理、化学、科学、道法、历史、地理、生物；各科覆盖年级不同，详见各年级页面。
