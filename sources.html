@@ -8,15 +8,23 @@
 <span class="crumb"><span class="crumb">/ <a href="index.html">总入口</a> / 来源与许可</span></span>
 </div></header>
 <div class="wrap">
-<div class="hero"><h1>资料来源与许可</h1>
+<div class="hero"><h1>资料来源、许可与页面分工</h1>
 <p class="lead">本目录所有内容均来自可公开获取的资料，或老师本人 ima 账号内可见的资料目录。</p></div>
 <h2>来源一览</h2>
 <table><thead><tr><th>来源</th><th>内容</th><th>许可 / 限制</th></tr></thead><tbody>
 <tr><td>GitHub <a href="https://github.com/xiaoyang111222/cn-math-taxonomy">cn-math-taxonomy</a></td><td>3297 知识点、13335 道题、课标、先修依赖；14 份年级笔记由此按年级抽取</td><td><b>CC BY-NC 4.0</b>：个人学习/教学/研究免费，禁止商用，需署名</td></tr>
 <tr><td>ima 个人知识库</td><td>339 条真实教辅目录（课堂笔记、学霸笔记、状元笔记等）</td><td>仅元数据：<code>FetchMediaContent</code> 对订阅库返回 220030，PDF 原件需在 ima 客户端查看</td></tr>
-<tr><td>教育部《3–6 岁儿童学习与发展指南》</td><td>学前 4 页分龄目标；PDF 原件 26.7 MB 已归档</td><td>公开文件</td></tr>
+<tr><td>教育部《3–6 岁儿童学习与发展指南》</td><td>学前 4 页分龄目标与脑图骨架；PDF 原件 26.7 MB 已归档</td><td>公开文件</td></tr>
 <tr><td>GitHub <a href="https://github.com/JeetChan/mini-classroom">mini-classroom</a></td><td>小学 1–2 年级数学 / 语文 / 基础英语互动站点，纯静态可离线打开</td><td>MIT</td></tr>
 </tbody></table>
+<h2>页面分工与去重设计</h2>
+<p>14 个年级各有 3 个页面，共 44 个 HTML（含总入口与来源页）。同一份实质正文只在其中一个页面出现，其它页面只放导航链接或结构名称：</p>
+<table><thead><tr><th>页面</th><th>独有内容</th><th>刻意不放</th></tr></thead><tbody>
+<tr><td>精讲页 <code>grade-XX.html</code></td><td>知识结构统计表、学前发展目标全文、基础自测 20 道、三页导航</td><td>知识点正文、进阶例题、教辅清单、脑图</td></tr>
+<tr><td>思维导图 <code>map-grade-XX.html</code></td><td>放射状 SVG 脑图、章节树、知识点名称索引（锚点跳转）</td><td>知识点正文、题目、教辅清单、发展目标全文</td></tr>
+<tr><td>完整笔记 <code>note-grade-XX.html</code></td><td>全部知识点正文 + 掌握标准 + 自测题、进阶例题 40 道、ima 教辅清单</td><td>基础自测 20 道、发展目标全文、结构统计表</td></tr>
+</tbody></table>
+<div class="note"><b>三类刻意处理过的重复</b>：① 精讲页原有「每科前 8 个知识点精讲」与笔记页全量正文重复 → 精讲页改为结构统计表；② 精讲页 20 道题与笔记页 60 道题重复 → 题目按 20 / 40 拆开，两页零交集；③ 学前 4 页共用同一组 6 个「一年级先修」知识点 → 按小班 / 中班 / 大班各 2 个切片，且发展目标全文只留在精讲页。<br>另外，脑图页只列知识点<b>名称</b>作为导航，不复制正文；总入口的来源表已精简为一句话并指向本页。<code>资料库/年级笔记/*.md</code> 是完整笔记的 Markdown 归档（同一份笔记的另一种格式），不属于站内页面重复。</div>
 <h2>本地归档位置</h2>
 <table><thead><tr><th>路径</th><th>说明</th></tr></thead><tbody>
 <tr><td><code>资料库/年级笔记/</code></td><td>14 份完整 Markdown 笔记</td></tr>
@@ -30,6 +38,6 @@
 <footer>
 资料来源：GitHub 开源 <a href="https://github.com/xiaoyang111222/cn-math-taxonomy">cn-math-taxonomy</a>（CC BY-NC 4.0，个人学习/教学免费，禁止商用）·
 教育部《3–6 岁儿童学习与发展指南》· ima 个人知识库目录元数据。<br>
-ima 内教辅 PDF 版权归原作者，仅归档目录信息；本页知识点与题目均取自开源项目真实数据，未虚构。生成时间：2026-11-06 15:56。
+ima 内教辅 PDF 版权归原作者，仅归档目录信息；本页知识点与题目均取自开源项目真实数据，未虚构。生成时间：2026-11-06 16:41。
 </footer>
 </div></body></html>
